@@ -1,0 +1,221 @@
+
+C:\cmder
+λ git branch
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\cmder
+λ cd device
+Системе не удается найти указанный путь.
+
+C:\cmder
+λ cd your-project
+
+C:\cmder\your-project
+λ tree
+Структура папок
+Серийный номер тома: C0000100 E20F:3D98
+C:.
+└───Device
+
+C:\cmder\your-project
+λ cd device
+
+C:\cmder\your-project\Device(main -> origin)
+λ git branch
+* main
+
+C:\cmder\your-project\Device(main -> origin)
+λ git branch -m main master
+
+C:\cmder\your-project\Device(master -> origin)
+λ get checkout -b task1
+"get" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\cmder\your-project\Device(master -> origin)
+λ git checkout -b task1
+Switched to a new branch 'task1'
+
+C:\cmder\your-project\Device(task1)
+λ Device git:(master) got checkout -b task1
+"Device" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\cmder\your-project\Device(task1)
+λ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/main'.
+
+C:\cmder\your-project\Device(master -> origin)
+λ git status
+On branch master
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\cmder\your-project\Device(master -> origin)
+λ git add -A
+
+C:\cmder\your-project\Device(master -> origin)
+λ git add 1.html
+fatal: pathspec '1.html' did not match any files
+
+C:\cmder\your-project\Device(master -> origin)
+λ cd device
+Системе не удается найти указанный путь.
+
+C:\cmder\your-project\Device(master -> origin)
+λ git brabch
+git: 'brabch' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+C:\cmder\your-project\Device(master -> origin)
+λ git branch
+* master
+  task1
+
+C:\cmder\your-project\Device(master -> origin)
+λ tree
+Структура папок
+Серийный номер тома: C0000100 E20F:3D98
+C:.
+Подпапки отсутствуют
+
+
+C:\cmder\your-project\Device(master -> origin)
+λ cd your-project
+Системе не удается найти указанный путь.
+
+C:\cmder\your-project\Device(master -> origin)
+λ cd ..
+
+C:\cmder\your-project
+λ cd device
+
+C:\cmder\your-project\Device(master -> origin)
+λ git commit -m "test edit"
+On branch master
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\cmder\your-project\Device(master -> origin)
+λ git push origin task1
+Enter passphrase for key '/c/Users/kaovc/.ssh/id_ed25519':
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (8/8), 1.73 KiB | 1.73 MiB/s, done.
+Total 8 (delta 0), reused 8 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'task1' on GitHub by visiting:
+remote:      https://github.com/Mafrus/Device/pull/new/task1
+remote:
+To github.com:Mafrus/Device.git
+ * [new branch]      task1 -> task1
+
+C:\cmder\your-project\Device(master -> origin)
+λ git add -A
+
+C:\cmder\your-project\Device(master -> origin)
+λ tree
+Структура папок
+Серийный номер тома: C0000100 E20F:3D98
+C:.
+└───0915
+
+C:\cmder\your-project\Device(master -> origin)
+λ git commit -m "урок 1509"
+[master acc9eaa] урок 1509
+ 11 files changed, 455 insertions(+)
+ create mode 100644 0915/1.html
+ create mode 100644 0915/1.mp3
+ create mode 100644 0915/1.mp4
+ create mode 100644 0915/1.png
+ create mode 100644 0915/2.html
+ create mode 100644 0915/3.html
+ create mode 100644 0915/4.html
+ create mode 100644 0915/5.html
+ create mode 100644 0915/6.html
+ create mode 100644 0915/7.html
+ create mode 100644 "0915/\320\267\320\260\320\264\320\260\321\207\320\260.txt"
+
+C:\cmder\your-project\Device(master -> origin)
+λ git push origin task1
+Enter passphrase for key '/c/Users/kaovc/.ssh/id_ed25519':
+Everything up-to-date
+
+C:\cmder\your-project\Device(master -> origin)
+λ git checkout -b 0915
+Switched to a new branch '0915'
+
+C:\cmder\your-project\Device(0915)
+λ git add -A
+
+C:\cmder\your-project\Device(0915)
+λ cd device
+Системе не удается найти указанный путь.
+
+C:\cmder\your-project\Device(0915)
+λ cd ..
+
+C:\cmder\your-project
+λ tree
+Структура папок
+Серийный номер тома: C0000100 E20F:3D98
+C:.
+└───Device
+
+C:\cmder\your-project
+λ cd device
+
+C:\cmder\your-project\Device(0915)
+λ tree
+Структура папок
+Серийный номер тома: C0000100 E20F:3D98
+C:.
+Подпапки отсутствуют
+
+
+C:\cmder\your-project\Device(0915)
+λ git branch
+* 0915
+  master
+  task1
+
+C:\cmder\your-project\Device(0915)
+λ git checkout master
+Switched to branch 'master'
+D       0915/1.html
+D       0915/1.mp3
+D       0915/1.mp4
+D       0915/1.png
+D       0915/2.html
+D       0915/3.html
+D       0915/4.html
+D       0915/5.html
+D       0915/6.html
+D       0915/7.html
+D       "0915/\320\267\320\260\320\264\320\260\321\207\320\260.txt"
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+C:\cmder\your-project\Device(master -> origin)
+λ git add -A
+
+C:\cmder\your-project\Device(master -> origin)
+λ git status
+On branch master
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\cmder\your-project\Device(master -> origin)
+λ git add -A
+
+C:\cmder\your-project\Device(master -> origin)
+λ

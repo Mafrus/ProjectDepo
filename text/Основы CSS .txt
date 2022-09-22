@@ -1,0 +1,84 @@
+Введение
+CSS - каскадные таблицы стилей.
+
+Синтаксис CSS - селекторы, декларации, блоки декларации, свойства. Директивы.
+
+body .text (селектор)  { (декларация)
+    font: normal 16px Arial, sans-serif;
+    color: #000;
+
+}
+Селектор указания 
+По селектору к кому нужно применять в фигурных скопках указаны правилы и он их прменяет,
+Виды записи 
+body . text{font:normal 16px Arial,sans-serif;color:#000;}
+
+body . text {
+     font: normal 16px Arial,sans-serif;
+     color:#000;
+}
+
+body . text {
+     font: normal 16px Arial,sans-serif !important;
+     color:#000;
+////////////////
+}
+body . text1, 
+body . text2,
+body . text3, {
+     font: normal 16px Arial,sans-serif;
+     color:#000;
+}
+body . text1, 
+body . text2,
+body . text3, {
+     font: normal 16px Arial,sans-serif;
+     color:#000;}
+///////////////////
+
+
+Каким образом поддключаем стили 4 способы
+Способы подключения стилей:
+- связывания (линк на отдельный файл)
+   <link  rel="stylesheet" href="css/style.css">
+
+- импортирование CSS(директива @import)
+@import "style/style.css" screen; подключить директиву
+
+
+- встаивание , могу находится внутри body - только работает и начинает с того месте где размещен данный тег, слева направо сверху -вниз, стили только к тем жэлементы применяются только после директивы style
+
+и используем только внутри директивы head 
+
+<style>
+...
+</style>
+
+- инлайн-вложение (атрибуте style, селектор не применяется)
+< tag style="...">
+
+Приоритет стилей
+1) ключевое слово !important;
+///
+ body . text {
+     font: normal 16px Arial,sans-serif !important;
+     color:#000; - будет в приоритете , за исключение если также есть импотант
+///
+2) способ подключения (инлайн, встраивание, связь)
+3) суммарный вес селектора
+4) взаимное расположение 
+5) собственные стили старше унаследованных.
+
+background: red;
+background: green;
+background: blue;
+
+a#ssylka1.button.blue[href="..."] - описание одного элемента
+<a href="..." id="ssylka" class="button blue">...</a>
+
+#id {...}
+#id.class {...}
+
+#leftcol p
+#rightcol p
+
